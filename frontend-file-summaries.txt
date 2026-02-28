@@ -1,0 +1,11 @@
+{
+  "frontend/src/App.tsx": "Main app component with TanStack Router setup, defining three routes (Home, ValentineMessage, PuzzleMinigame) wrapped in a Layout component with Outlet.",
+  "frontend/src/components/Layout.tsx": "Shared layout wrapper with animated floating hearts background, pink gradient, and footer with caffeine.ai attribution.",
+  "frontend/src/pages/Home.tsx": "Landing/beranda page featuring \"Aika Rienasari\" title, Valentine banner image, animated hearts, and navigation buttons to the message and puzzle pages.",
+  "frontend/src/pages/ValentineMessage.tsx": "Valentine message page displaying \"Happy Valentine sayang\" heading, the couple's AYCE photo, and the full love letter text with decorative styling.",
+  "frontend/src/pages/PuzzleMinigame.tsx": "3x3 sliding tile puzzle minigame that renders each tile using CSS `background-image`, `background-size: 360px 360px`, and calculated `background-position` offsets to correctly slice the couple-ayce.jpg photo into 9 tiles. Includes move counter, shuffle button, and a romantic congratulations modal on completion.",
+  "frontend/src/hooks/useSlidingPuzzle.ts": "Custom React hook managing sliding puzzle state including tile positions, shuffle logic with solvability check, move validation, and completion detection.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks; no backend queries needed for this static Valentine app.",
+  "frontend/src/index.css": "Global styles with pink OKLCH color system, Comic Sans font, Valentine-themed CSS components (cards, buttons, gradients), and keyframe animations for floating hearts and pop-in effects.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Comic Sans font family, pink color palette tokens, custom box shadows, and animation keyframes."
+}

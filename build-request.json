@@ -1,0 +1,43 @@
+{
+  "kind": "build_request",
+  "title": "Fix puzzle image tiles not rendering in 3x3 sliding puzzle",
+  "projectName": "Valentine untuk Aika",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Fix the 3x3 sliding tile puzzle in PuzzleMinigame.tsx so that couple-ayce.jpg renders correctly as individual tiles. Each tile must use CSS background-image with background-position calculated per tile index to slice the correct portion of the image, ensuring the full photo is visible across the assembled grid. The image path must correctly reference /assets/generated/couple-ayce.jpg.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "gambar puzzlenya mana? tidak terender"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each tile in the 3x3 grid displays the correct cropped region of couple-ayce.jpg using CSS background-image and background-position/background-size.",
+        "When all tiles are in solved order, the full couple-ayce.jpg photo is visible as a seamless image across the grid.",
+        "The empty tile (blank space) has no background image rendered.",
+        "The image loads without broken image indicators or blank white tiles.",
+        "The puzzle remains functional — tiles can be slid, move counter increments, and completion detection still works."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui.",
+    "The image asset path must remain at /assets/generated/couple-ayce.jpg (served from frontend/public/assets/generated/couple-ayce.jpg).",
+    "Do not change the puzzle logic in useSlidingPuzzle.ts — only fix the rendering in PuzzleMinigame.tsx."
+  ],
+  "nonGoals": [
+    "Changing puzzle grid size from 3x3.",
+    "Replacing or modifying the couple-ayce.jpg image.",
+    "Adding new features to the puzzle page (music, animations beyond what exists).",
+    "Modifying the Valentine Message page or Home page."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

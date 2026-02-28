@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Valentine app for Aika Rienasari with pink theme, Comic Sans font, romantic puzzle minigame, home page, Valentine message page with love letter, and user-uploaded photo.",
+  "architectural_notes": [
+    "Theme: pink color palette throughout, Comic Sans font globally",
+    "User uploaded a photo of the couple (AYCE setting) to be used in the app"
+  ],
+  "known_issues": [
+    "Puzzle minigame image (couple-ayce.jpg) not rendering correctly as tiles in the 3x3 grid"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-home-beranda-page-as-the-app-s-landing-screen-it-should-display-a-romantic-valentine-themed-intro-featuring-the-name-aika-rienasari-animated-floating-hearts-and-navigation-buttons-to-the-valentine-message-page-and-the-puzzle-minigame-page",
+      "title": "Create a Home (Beranda) page as the app's landing screen. It should display a romantic Valentine-themed intro featuring the name 'Aika Rienasari', animated floating hearts, and navigation buttons to the Valentine Message page and the Puzzle Minigame page.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-valentine-message-page-that-displays-the-heading-happy-valentine-sayang-and-the-full-love-letter-text-hey-bebe-do-u-know-that-i-love-you-that-i-love-you-so-much-ofc-it-s-obvious-because-you-are-literally-my-world-i-m-so-grateful-to-have-you-in-my-life-you-gave-everything-to-me-how-can-i-not-love-you-i-hope-that-our-love-bond-get-much-stronger-and-i-hope-i-have-so-much-money-so-that-we-can-do-ayce-every-single-day-wkwkwkw-love-you-the-couple-s-ayce-photo-couple-ayce-jpg-must-be-displayed-on-this-page-alongside-the-message",
+      "title": "Create a Valentine Message page that displays the heading 'Happy Valentine sayang' and the full love letter text: 'Hey bebe, do u know that I love you? that I love you so much, ofc it's obvious.... because YOU are literally MY WORLD, i'm so grateful to have you in my life, you gave everything to me, how can i not love you? I hope that our love bond get much stronger and I hope I have so much money so that we can do AYCE every single day wkwkwkw, love you'. The couple's AYCE photo (couple-ayce.jpg) must be displayed on this page alongside the message.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-puzzle-minigame-page-featuring-a-sliding-tile-puzzle-e-g-3x3-grid-using-the-couple-s-ayce-photo-couple-ayce-jpg-the-puzzle-should-be-shuffled-on-load-allow-the-user-to-slide-tiles-to-solve-it-detect-when-the-puzzle-is-complete-and-display-a-romantic-congratulations-message-upon-completion",
+      "title": "Create a Puzzle Minigame page featuring a sliding tile puzzle (e.g., 3x3 grid) using the couple's AYCE photo (couple-ayce.jpg). The puzzle should be shuffled on load, allow the user to slide tiles to solve it, detect when the puzzle is complete, and display a romantic congratulations message upon completion.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-visual-theme-across-all-pages-hot-pink-and-rose-pink-color-palette-comic-sans-ms-font-for-all-text-heart-and-valentine-decorative-elements-soft-pink-gradient-backgrounds-and-smooth-page-transitions-between-the-three-pages",
+      "title": "Apply a consistent visual theme across all pages: hot pink and rose pink color palette, Comic Sans MS font for all text, heart and Valentine decorative elements, soft pink gradient backgrounds, and smooth page transitions between the three pages.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-serve-the-uploaded-couple-ayce-photo-as-a-static-asset-at-frontend-public-assets-generated-couple-ayce-jpg-so-it-can-be-used-by-both-the-valentine-message-page-and-the-puzzle-minigame-page",
+      "title": "Serve the uploaded couple AYCE photo as a static asset at frontend/public/assets/generated/couple-ayce.jpg so it can be used by both the Valentine Message page and the Puzzle Minigame page.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-3x3-sliding-tile-puzzle-in-puzzleminigame-tsx-so-that-couple-ayce-jpg-renders-correctly-as-individual-tiles-each-tile-must-use-css-background-image-with-background-position-calculated-per-tile-index-to-slice-the-correct-portion-of-the-image-ensuring-the-full-photo-is-visible-across-the-assembled-grid-the-image-path-must-correctly-reference-assets-generated-couple-ayce-jpg",
+      "title": "Fix the 3x3 sliding tile puzzle in PuzzleMinigame.tsx so that couple-ayce.jpg renders correctly as individual tiles. Each tile must use CSS background-image with background-position calculated per tile index to slice the correct portion of the image, ensuring the full photo is visible across the assembled grid. The image path must correctly reference /assets/generated/couple-ayce.jpg.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Home/beranda page with pink Valentine theme and Aika Rienasari intro",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Valentine message page with 'Happy Valentine sayang' and love letter text",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Romantic puzzle minigame using couple's photo",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Display uploaded AYCE photo on one of the pages",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "2d",
+  "projectName": "Valentine untuk Aika",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

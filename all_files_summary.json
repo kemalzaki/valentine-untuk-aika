@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend canister placeholder with no methods defined.",
+  "feature_evidence.json": "Feature evidence report documenting the fix for the 3x3 sliding tile puzzle image rendering in PuzzleMinigame.tsx, with test ID REQ-6 and high confidence.",
+  "frontend-file-summaries.txt": "JSON document containing one-line summaries of each frontend source file for documentation or build planning purposes.",
+  "frontend/index.css": "Empty CSS file at the frontend root level.",
+  "frontend/index.html": "HTML entry point for the Valentine app, mounting the React app at the root div and loading main.tsx as a module.",
+  "frontend/src/App.tsx": "Root React component that sets up TanStack Router with three routes (Home, ValentineMessage, PuzzleMinigame) wrapped in a shared Layout component.",
+  "frontend/src/components/Layout.tsx": "Shared layout component rendering animated floating hearts in the background, wrapping page content, and displaying a footer with caffeine.ai attribution.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor using TanStack Query, supporting both anonymous and authenticated (Internet Identity) usage.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom hook and context provider managing Internet Identity authentication state, including login, logout, and identity persistence via AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder module exporting nothing, noting that no backend queries are needed for this static Valentine app.",
+  "frontend/src/hooks/useSlidingPuzzle.ts": "Custom hook managing 3x3 sliding puzzle state, including solvability-checked shuffle, tile move validation, move counting, and completion detection.",
+  "frontend/src/index.css": "Global stylesheet defining a pink OKLCH Valentine color system, Comic Sans font, reusable Valentine UI component classes, and keyframe animations for hearts and modals.",
+  "frontend/src/main.tsx": "React app entry point that wraps the App component with QueryClientProvider and InternetIdentityProvider before mounting to the DOM.",
+  "frontend/src/pages/Home.tsx": "Landing page displaying a Valentine banner image, a greeting card for Aika Rienasari, and navigation buttons to the message and puzzle pages.",
+  "frontend/src/pages/PuzzleMinigame.tsx": "Renders a 3x3 sliding tile puzzle page using the couple's AYCE photo, displaying move count, solved status, and tile grid with click-to-move interaction via the useSlidingPuzzle hook.",
+  "frontend/src/pages/ValentineMessage.tsx": "Displays a Valentine's Day message page with the couple's AYCE photo, a romantic love letter, and a navigation button to the puzzle minigame.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with Comic Sans font, pink box shadows, oklch-based color tokens, and accordion keyframes, with typography, container-queries, and animate plugins.",
+  "project_state.json": "Tracks the current project state (version 5) for a Valentine app, listing existing features, architectural notes (pink theme, Comic Sans), and a known issue with puzzle tile image rendering."
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix puzzle image tiles not rendering in 3x3 sliding puzzle",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Fix the 3x3 sliding tile puzzle so that couple-ayce.jpg renders correctly as individual tiles using CSS background-image with calculated background-position to slice the correct portion of the image per tile index",
+      "acceptanceCriteria": [
+        "Each tile in the 3x3 grid displays the correct cropped region of couple-ayce.jpg using CSS background-image and background-position/background-size.",
+        "When all tiles are in solved order, the full couple-ayce.jpg photo is visible as a seamless image across the grid.",
+        "The empty tile (blank space) has no background image rendered.",
+        "The image loads without broken image indicators or blank white tiles.",
+        "The puzzle remains functional — tiles can be slid, move counter increments, and completion detection still works."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/PuzzleMinigame.tsx",
+          "operation": "modify",
+          "description": "Update the tile rendering logic in the puzzle grid to use CSS background-image with /assets/generated/couple-ayce.jpg as the source. For each tile (except the empty tile at index 8), calculate the background-position based on the tile's value to display the correct 1/9th slice of the image. Set background-size to 300% (3 times tile width) so the full image spans the 3x3 grid. Use inline styles or className to apply background-image: url('/assets/generated/couple-ayce.jpg'), background-size: 300% 300%, and background-position calculated as ((value % 3) * -100%) ((Math.floor(value / 3)) * -100%) where value is the tile's original position (0-8). Ensure the empty tile (index 8 or value 8) renders with no background image. Verify the existing puzzle functionality (tile sliding, move counter, completion detection) remains intact."
+        }
+      ]
+    }
+  ]
+}

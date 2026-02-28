@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-fix-the-3x3-sliding-tile-puzzle-in-puzzleminigame-tsx-so-that-couple-ayce-jpg-renders-correctly-as-individual-tiles-each-tile-must-use-css-background-image-with-background-position-calculated-per-tile-index-to-slice-the-correct-portion-of-the-image-ensuring-the-full-photo-is-visible-across-the-assembled-grid-the-image-path-must-correctly-reference-assets-generated-couple-ayce-jpg",
+      "featureTitle": "Fix the 3x3 sliding tile puzzle in PuzzleMinigame.tsx so that couple-ayce.jpg renders correctly as individual tiles. Each tile must use CSS background-image with background-position calculated per tile index to slice the correct portion of the image, ensuring the full photo is visible across the assembled grid. The image path must correctly reference /assets/generated/couple-ayce.jpg.",
+      "files": [
+        "frontend/src/pages/PuzzleMinigame.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
