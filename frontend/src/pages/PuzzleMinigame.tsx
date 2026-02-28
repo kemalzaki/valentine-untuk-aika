@@ -1,7 +1,7 @@
 import { useNavigate } from '@tanstack/react-router';
 import { useSlidingPuzzle } from '../hooks/useSlidingPuzzle';
 
-const IMAGE_SRC = '/assets/generated/couple-ayce.jpg';
+const IMAGE_SRC = '/assets/generated/couple-ayce.png';
 const GRID_SIZE = 3;
 const TILE_SIZE = 120; // px per tile
 const BOARD_SIZE = TILE_SIZE * GRID_SIZE; // 360px

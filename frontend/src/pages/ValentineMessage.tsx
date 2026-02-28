@@ -32,7 +32,7 @@ export default function ValentineMessage() {
         <div className="px-8 pt-8">
           <div className="relative rounded-2xl overflow-hidden shadow-pink border-4 border-pink-200">
             <img
-              src="/assets/generated/couple-ayce.jpg"
+              src="/assets/generated/couple-ayce.png"
               alt="Kita berdua lagi AYCE 🍖"
               className="w-full object-cover"
               style={{ maxHeight: '380px' }}
